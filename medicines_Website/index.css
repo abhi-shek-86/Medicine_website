@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'jedira-regular';
+    src: url('fonts/Jedira\ Font/jedira-regular') format('woff2'),
+        url('fonts/Jedira\ Font/jedira-regular') format('woff'),
+        url('fonts/Jedira\ Font/jedira-regular') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "source-sans-pro";
+    src:
+        url('fonts/source-sans-pro/SourceSansPro-ExtraLight.otf') format('woff2'),
+        url('fonts/source-sans-pro/SourceSansPro-ExtraLight.otf') format('woff'),
+
+        url("fonts/source-sans-pro/SourceSansPro-ExtraLight.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Align items on left, center, and right */
+    align-items: center;
+    padding: 1px 2px;
+    background-color: #fffbfb;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+.header-container {
+    background-color: #f2ebdc;
+    border-radius: 0px;
+    border: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.marquee-text {
+    font-size: 15px;
+    font-weight: 700;
+
+
+    color: #A86728;
+}
+
+.hr {
+    border: none;
+    height: 1px;
+    background-color: #A86728;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 50px;
+
+}
+
+.img {
+    background: transparent;
+
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+.head {
+    color: #363636;
+    font-family: jedira;
+    font-size: x-large;
+}
+
+
+.but {
+    background-color: #a868287f;
+    border-radius: 10px;
+    border-color: #363636;
+    width: 100px;
+
+}
+
+tr {
+    height: 10px;
+    /* Adjust the height for spacing */
+}
+
+td {
+    padding: 0px 0;
+    /* Adds vertical spacing between rows */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap without collapsing */
+        justify-content: space-between; /* Keep items aligned */
+        align-items: center;
+        padding: 5px 10px;
+    }
+
+    .nav-left, 
+    .nav-right {
+        display: flex;
+        flex-wrap: wrap; /* Ensure content fits in a row */
+        gap: 20px; /* Reduce space for smaller screens */
+    }
+
+    .header-container {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .marquee-text {
+        font-size: 14px; /* Reduce text size slightly */
+    }
+
+    .head {
+        font-size: medium; /* Adjust font size */
+    }
+
+    .but {
+        width: 90px; /* Adjust button size */
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
